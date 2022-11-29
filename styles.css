@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Open+Sans:wght@300;700&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #333399, #ff00cc);
+}
+
+.login-card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.login-card::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.login-card::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+/* start the head */
+.login-card .head {
+    text-align: center;
+}
+
+.login-card .head ion-icon {
+    font-size: 100px;
+}
+
+.login-card .head h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.login-card .head p {
+    margin: 8px 0 0 0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .8);
+}
+
+/* end of the head */
+
+/* start of the form */
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+}
+
+.login-card form input {
+    padding: .8rem;
+    border-radius: 100px;
+    border: none;
+    padding-left: 50px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.login-card form input:focus {
+    background-color: #fff;
+    outline: none;
+}
+
+.login-card form input::placeholder {
+    color: black;
+}
+
+.login-card form span {
+    position: absolute;
+}
+
+.login-card form span:first-child {
+    left: 15px;
+    top: 9px;
+    color: rgba(0, 0, 0, .2);
+}
+
+.login-card form .second {
+    left: 15px;
+    top: 68px;
+    color: rgba(0, 0, 0, .2);
+}
+
+.login-card form .checkbox {
+    font-size: 14px;
+    display: flex;
+    gap: 55px;
+}
+
+.login-card form .checkbox div {
+    position: relative;
+}
+
+.login-card form .checkbox div label {
+    margin-left: 23px;
+}
+
+.login-card form .checkbox div input {
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.login-card form .checkbox a {
+    text-decoration: none;
+}
+
+.login-card form button {
+    color: #fff;
+    background-color: #000;
+    font-size: 15px;
+    padding: .8rem;
+    border-radius: 100px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.login-card form p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+.login-card form p a {
+    text-decoration: none;
+}
+
+/* end of the form */
+
+/* start the social-media */
+.social-media {
+    padding: 1rem 0 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.social-media p {
+    color: rgba(255, 255, 255, .5);
+    margin: 0 5px 0 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.social-media a ion-icon {
+    color: #000;
+}
+
+/* end the social-media */
